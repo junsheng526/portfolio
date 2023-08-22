@@ -1,4 +1,13 @@
 const constData = {
+    header: {
+        logo: 'Jun Sheng',
+    },
+    social: {
+        instagram: "https://www.instagram.com/junsheng_526/",
+        linkedin: "www.linkedin.com/in/junshengchoo57",
+        github: "https://github.com/junsheng526",
+        facebook: "https://www.facebook.com/profile.php?id=100011828614767",
+    },
     home: {
         name: 'Jun Sheng',
         position: 'Software Developer',
@@ -62,6 +71,54 @@ const constData = {
             level: 'Intermediate',
         },
     ],
+    education: [
+        {
+            title: 'Web Designer',
+            subtitle: 'Spain - Institute',
+            date: '2021 - Present',
+        },
+        {
+            title: 'Art Director',
+            subtitle: 'Spain - Institute',
+            date: '2020 - 2021',
+        },
+        {
+            title: 'Web Development',
+            subtitle: 'Spain - Institute',
+            date: '2018 - 2020',
+        },
+        {
+            title: 'UX Expert',
+            subtitle: 'Spain - Institute',
+            date: '2017 - 2018',
+        },
+    ],
+    experience: [
+        {
+            title: 'Product Designer',
+            subtitle: 'Microsoft - Spain',
+            date: '2021 - Present',
+        },
+        {
+            title: 'UX Designer',
+            subtitle: 'Apple Inc - Spain',
+            date: '2020 - 2021',
+        },
+        {
+            title: 'Web Designer',
+            subtitle: 'Figma - Institute',
+            date: '2018 - 2020',
+        },
+    ],
+    contact: {
+        email: "junshengchoo57@gmail.com",
+        whatsapp: "(+60)18-9868 627",
+        messenger: "Jun Sheng",
+        emailLink: "mailto:junshengchoo57@gmail.com",
+        whatsappLink: "https://api.whatsapp.com/send?phone=019-7828627&text=Hello,%20more%20information!",
+        messengerLink: "https://m.me/user.fb123"
+    }
+    ,
 };
 
 export default constData;

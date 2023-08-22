@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import "./header.css";
+import constData from '../../constants/constants';
 
 const Header = () => {
 
@@ -15,7 +16,7 @@ const Header = () => {
     return (
         <header className="header">
             <nav className="nav container">
-                <a href="index.html" className="nav__logo">Smith</a>
+                <a href="index.html" className="nav__logo">{constData.header.logo}</a>
 
                 <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
                     <ul className="nav__list grid">

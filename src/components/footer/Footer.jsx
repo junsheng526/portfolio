@@ -1,5 +1,6 @@
 import React from 'react'
 import "./footer.css"
+import constData from '../../constants/constants'
 
 const Footer = () => {
     return (
@@ -22,16 +23,16 @@ const Footer = () => {
                 </ul>
 
                 <div className="footer__social">
-                    <a href="https://www.instagram.com/" className="footer__social-link" target="_blank">
+                    <a href={constData.social.instagram} className="footer__social-link" target="_blank">
                         <i className="bx bxl-instagram"></i>
                     </a>
 
-                    <a href="https://facebook.com/" className="footer__social-link" target="_blank">
+                    <a href={constData.social.facebook} className="footer__social-link" target="_blank">
                         <i className="bx bxl-facebook"></i>
                     </a>
 
-                    <a href="https://twitter.com/" className="footer__social-link" target="_blank">
-                        <i className="bx bxl-twitter"></i>
+                    <a href={constData.social.github} className="footer__social-link" target="_blank">
+                        <i className="bx bxl-github"></i>
                     </a>
                 </div>
                 <span className="footer__copy">

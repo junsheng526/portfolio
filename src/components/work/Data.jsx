@@ -10,30 +10,35 @@ export const projectsData = [
         image: Work1,
         title: "Web design",
         category: "web",
+        demoUrl: "https://facebook.com",
     },
     {
         id: 2,
         image: Work2,
         title: "App movil",
         category: "app",
+        demoUrl: "",
     },
     {
         id: 3,
         image: Work3,
         title: "Brand design",
         category: "design",
+        demoUrl: "",
     },
     {
         id: 4,
         image: Work4,
         title: "App movil",
         category: "app",
+        demoUrl: "",
     },
     {
         id: 5,
         image: Work5,
         title: "Web design",
         category: "web",
+        demoUrl: "",
     },
 ];
 

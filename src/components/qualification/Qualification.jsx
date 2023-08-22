@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import "./qualification.css"
+import constData from '../../constants/constants';
 
 const Qualification = () => {
     const [toggleState, setToggleState] = useState(1);
@@ -49,10 +50,10 @@ const Qualification = () => {
                     >
                         <div className="qualification__data">
                             <div>
-                                <h3 className="qualification__title">Web Design</h3>
-                                <span className="qualification__subtitle">Spain - Institute</span>
+                                <h3 className="qualification__title">{constData.education[0].title}</h3>
+                                <span className="qualification__subtitle">{constData.education[0].subtitle}</span>
                                 <div className="qualification__calendar">
-                                    <i className="uil uil-calendar-alt"></i> 2021 - Present
+                                    <i className="uil uil-calendar-alt"></i> {constData.education[0].date}
                                 </div>
                             </div>
 
@@ -72,20 +73,20 @@ const Qualification = () => {
                             </div>
 
                             <div>
-                                <h3 className="qualification__title">Art Director</h3>
-                                <span className="qualification__subtitle">Spaain - Institute</span>
+                                <h3 className="qualification__title">{constData.education[1].title}</h3>
+                                <span className="qualification__subtitle">{constData.education[1].subtitle}</span>
                                 <div className="qualification__calendar">
-                                    <i className="uil uil-calendar-alt"></i> 2020 - 2021
+                                    <i className="uil uil-calendar-alt"></i> {constData.education[1].date}
                                 </div>
                             </div>
                         </div>
 
                         <div className="qualification__data">
                             <div>
-                                <h3 className="qualification__title">Web Development</h3>
-                                <span className="qualification__subtitle">Spain - Institute</span>
+                                <h3 className="qualification__title">{constData.education[2].title}</h3>
+                                <span className="qualification__subtitle">{constData.education[2].subtitle}</span>
                                 <div className="qualification__calendar">
-                                    <i className="uil uil-calendar-alt"></i> 2018 - 2020
+                                    <i className="uil uil-calendar-alt"></i> {constData.education[2].date}
                                 </div>
                             </div>
 
@@ -105,10 +106,10 @@ const Qualification = () => {
                             </div>
 
                             <div>
-                                <h3 className="qualification__title">UX Expert</h3>
-                                <span className="qualification__subtitle">Spaain - Institute</span>
+                                <h3 className="qualification__title">{constData.education[3].title}</h3>
+                                <span className="qualification__subtitle">{constData.education[3].subtitle}</span>
                                 <div className="qualification__calendar">
-                                    <i className="uil uil-calendar-alt"></i> 2017 - 2018
+                                    <i className="uil uil-calendar-alt"></i> {constData.education[3].date}
                                 </div>
                             </div>
                         </div>
@@ -123,10 +124,10 @@ const Qualification = () => {
                     >
                         <div className="qualification__data">
                             <div>
-                                <h3 className="qualification__title">Product Designer</h3>
-                                <span className="qualification__subtitle">Microsoft - Spain</span>
+                                <h3 className="qualification__title">{constData.experience[0].title}</h3>
+                                <span className="qualification__subtitle">{constData.experience[0].subtitle}</span>
                                 <div className="qualification__calendar">
-                                    <i className="uil uil-calendar-alt"></i> 2021 - Present
+                                    <i className="uil uil-calendar-alt"></i> {constData.experience[0].date}
                                 </div>
                             </div>
 
@@ -146,20 +147,20 @@ const Qualification = () => {
                             </div>
 
                             <div>
-                                <h3 className="qualification__title">UX Designer</h3>
-                                <span className="qualification__subtitle">Apple Inc - Spain</span>
+                                <h3 className="qualification__title">{constData.experience[1].title}</h3>
+                                <span className="qualification__subtitle">{constData.experience[1].subtitle}</span>
                                 <div className="qualification__calendar">
-                                    <i className="uil uil-calendar-alt"></i> 2020 - 2021
+                                    <i className="uil uil-calendar-alt"></i> {constData.experience[1].date}
                                 </div>
                             </div>
                         </div>
 
                         <div className="qualification__data">
                             <div>
-                                <h3 className="qualification__title">Web Designer</h3>
-                                <span className="qualification__subtitle">Figma - Spain</span>
+                                <h3 className="qualification__title">{constData.experience[2].title}</h3>
+                                <span className="qualification__subtitle">{constData.experience[2].subtitle}</span>
                                 <div className="qualification__calendar">
-                                    <i className="uil uil-calendar-alt"></i> 2018 - 2020
+                                    <i className="uil uil-calendar-alt"></i> {constData.experience[2].date}
                                 </div>
                             </div>
 

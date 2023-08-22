@@ -115,7 +115,7 @@ const constData = {
         whatsapp: "(+60)18-9868 627",
         messenger: "Jun Sheng",
         emailLink: "mailto:junshengchoo57@gmail.com",
-        whatsappLink: "https://api.whatsapp.com/send?phone=019-7828627&text=Hello,%20more%20information!",
+        whatsappLink: "https://api.whatsapp.com/send?phone=(+60)18-9868 627&text=Hello,%20more%20information!",
         messengerLink: "https://m.me/user.fb123"
     },
     footer: {

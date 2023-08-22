@@ -66,6 +66,7 @@
 
 .contact__form {
     width: 360px;
+    text-align: center;
 }
 
 .contact__form-div {
@@ -107,6 +108,10 @@
     resize: none;
 }
 
+.button__icon {
+    vertical-align: middle;
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {
@@ -138,8 +143,13 @@
 
     .contact__form {
         width: 100%;
+        /* text-align: center; */
     }
 }
 
 /* For small devices */
-@media screen and (max-width: 350px) {}
+@media screen and (max-width: 350px) {
+    /* .contact__form {
+        text-align: center;
+    } */
+}

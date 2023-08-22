@@ -4,7 +4,7 @@ const constData = {
     },
     social: {
         instagram: "https://www.instagram.com/junsheng_526/",
-        linkedin: "www.linkedin.com/in/junshengchoo57",
+        linkedin: "https://www.linkedin.com/in/junshengchoo57/",
         github: "https://github.com/junsheng526",
         facebook: "https://www.facebook.com/profile.php?id=100011828614767",
     },

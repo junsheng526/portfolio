@@ -184,10 +184,10 @@
         margin-bottom: var(--mb-1);
     }
 
-    .home__subtitle::before {
+    /* .home__subtitle::before {
         width: 42px;
         top: 0.8rem;
-    }
+    } */
 
     .home__description {
         max-width: initial;

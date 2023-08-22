@@ -3,6 +3,7 @@ import "./about.css"
 import AboutImg from "../../assets/about.jpg"
 import CV from "../../assets/John-Cv.pdf"
 import Info from './Info'
+import constData from '../../constants/constants'
 
 const About = () => {
     return (
@@ -17,7 +18,7 @@ const About = () => {
                     <Info />
 
                     <p className="about__description">
-                        Frontend developer, I create web pages with UI / UX user interface, I have years of experience and many clients are happy with the projects carried out.
+                        {constData.about.description}
                     </p>
 
                     <a download="" href={CV} className="button button--flex">

@@ -1,44 +1,44 @@
-import Work1 from "../../assets/work1.jpg"
-import Work2 from "../../assets/work2.jpg"
-import Work3 from "../../assets/work3.jpg"
-import Work4 from "../../assets/work4.jpg"
-import Work5 from "../../assets/work5.jpg"
+import Work1 from "../../assets/solar-energy-website.jpg"
+import Work2 from "../../assets/confession-app.jpg"
+import Work3 from "../../assets/figma-design.jpg"
+import Work4 from "../../assets/carpooling.jpeg"
+import Work5 from "../../assets/admin-panel.jpg"
 
 export const projectsData = [
     {
         id: 1,
         image: Work1,
-        title: "Web design",
+        title: "Solar Energy Client Website",
         category: "web",
-        demoUrl: "https://facebook.com",
+        demoUrl: "https://8-bit-six.vercel.app/",
     },
     {
         id: 2,
         image: Work2,
-        title: "App movil",
+        title: "University Confession Flutter App",
         category: "app",
-        demoUrl: "",
+        demoUrl: "#",
     },
     {
         id: 3,
         image: Work3,
-        title: "Brand design",
+        title: "Figma Design",
         category: "design",
-        demoUrl: "",
+        demoUrl: "https://www.figma.com/file/0XtSWbQxHr3K7bZd1QHkpO/Renewable-Energy-Web-Pages?type=design&node-id=0-1&mode=design&t=HuPeRjRtWTPysBA2-0",
     },
     {
         id: 4,
         image: Work4,
-        title: "App movil",
+        title: "Carpooling Driver Kotlin App",
         category: "app",
-        demoUrl: "",
+        demoUrl: "#",
     },
     {
         id: 5,
         image: Work5,
-        title: "Web design",
+        title: "Solar Energy Admin Website",
         category: "web",
-        demoUrl: "",
+        demoUrl: "https://8-bit-six.vercel.app/company_index.html",
     },
 ];
 

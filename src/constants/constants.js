@@ -117,8 +117,10 @@ const constData = {
         emailLink: "mailto:junshengchoo57@gmail.com",
         whatsappLink: "https://api.whatsapp.com/send?phone=019-7828627&text=Hello,%20more%20information!",
         messengerLink: "https://m.me/user.fb123"
-    }
-    ,
+    },
+    footer: {
+        copywrite: "JunSheng. All rigths reserved",
+    },
 };
 
 export default constData;

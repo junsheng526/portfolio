@@ -36,7 +36,7 @@ const Footer = () => {
                     </a>
                 </div>
                 <span className="footer__copy">
-                    &#169; Crypticalcoder. All rigths reserved
+                    &#169; {constData.footer.copywrite}
                 </span>
             </div>
         </footer>

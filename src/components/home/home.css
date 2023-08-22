@@ -88,6 +88,8 @@
 
 .home__subtitle {
     position: relative;
+    display: block;
+    height: 20px;
     font-size: var(--h3-font-size);
     /* padding-left: 5.4rem; */
     font-weight: var(--font-medium);

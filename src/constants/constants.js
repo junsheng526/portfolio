@@ -23,7 +23,7 @@ const constData = {
   },
   backend: [
     {
-      name: "PHP",
+      name: "Git",
       level: "Intermediate",
     },
     {
@@ -43,7 +43,7 @@ const constData = {
       level: "Intermediate",
     },
     {
-      name: "Firebase",
+      name: "Java",
       level: "Intermediate",
     },
   ],
@@ -65,7 +65,7 @@ const constData = {
       level: "Intermediate",
     },
     {
-      name: "Git",
+      name: "TypeScript",
       level: "Intermediate",
     },
     {

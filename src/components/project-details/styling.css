@@ -1,0 +1,42 @@
+.img{
+    height: 300px;
+    width: 300px;
+}
+
+.card{
+    border-bottom: 2px solid #C7C8CC;
+    display: flex;
+    flex-direction: row;
+    width:55%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.card-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px;
+    text-align: justify;
+}
+
+.title{
+    margin-bottom: 12px;
+}
+
+.description{
+    margin-bottom: 12px;
+}
+
+.technologies{
+    margin-bottom: 12px;
+}
+
+.button{
+    margin-bottom: 12px;
+    align-self: flex-start;
+}
+
+.last-project {
+    border-bottom: none;
+  }

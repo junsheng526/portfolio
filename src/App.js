@@ -1,34 +1,16 @@
 import React from "react";
-import "./App.css";
-import Header from "./components/header/Header";
-import Home from "./components/home/Home";
-import About from "./components/about/About";
-import Skills from "./components/skills/Skills";
-import Qualification from "./components/qualification/Qualification";
-import Contact from "./components/contact/Contact";
-import Footer from "./components/footer/Footer";
-import ScrollUp from "./components/scrollup/ScrollUp";
-import Work from "./components/work/Work";
-import Timeline from "./components/timeline/timeline";
+import Landing from "./components/landing-page/home";
+import ProjectPage from "./components/project-details/project-page";
+import { Routes, Route } from "react-router-dom";
+import ErrorPage from "./components/error-page";
 
 const App = () => {
   return (
-    <>
-      <Header />
-
-      <main className="main">
-        <Home />
-        <About />
-        <Skills />
-        <Timeline />
-        <Qualification />
-        <Work />
-        <Contact />
-      </main>
-
-      <Footer />
-      <ScrollUp />
-    </>
+    <Routes>
+      <Route path="/" element={<Landing />}></Route>
+      <Route path="project-page" element={<ProjectPage />}></Route>
+      <Route path="*" element={<ErrorPage />}></Route>
+    </Routes>
   );
 };
 

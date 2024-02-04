@@ -1,6 +1,4 @@
 import React from "react";
-import Work1 from "../../assets/solar-energy-website.jpg";
-import HomePage from "../../assets/home-page.png";
 import "./styling.css";
 
 const Project = ({ image, title, description, technologies, isLast }) => {

@@ -2,13 +2,15 @@ import React from "react";
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
 import ScrollUp from "../scrollup/ScrollUp";
-import Project from "./project";
+import "./styling.css";
+import { useParams } from "react-router-dom";
 
 const ProjectDetails = () => {
-  const projects = [
+  const projectDetails = [
     {
       id: 1,
-      image: require("../../assets/home-page.png"),
+      platform: "mobile",
+      image: require("../../assets/carpool-bg.png"),
       title: "TARUMT Carpooling Driver App",
       description:
         "Developed by using Kotlin for both frontend and backend, showcasing exceptional native mobile development skills. Integrated with Firebase APIs as the project database for authentication, real-time data synchronization and data storage. Integration with Google Maps API, Text Recognition API for project’s advanced features",
@@ -17,6 +19,7 @@ const ProjectDetails = () => {
     },
     {
       id: 2,
+      platform: "web",
       image: require("../../assets/confession-app.png"),
       title: "TARUMT Confession App",
       description:
@@ -26,6 +29,7 @@ const ProjectDetails = () => {
     },
     {
       id: 3,
+      platform: "web",
       image: require("../../assets/solar-energy-website.png"),
       title: "Renewable Energy Web System",
       description:
@@ -35,28 +39,24 @@ const ProjectDetails = () => {
     },
   ];
 
+  const { projectId } = useParams();
+
+  const selectedProject = projectDetails.find(
+    (project) => project.id === parseInt(projectId)
+  );
+
   return (
     <>
       <Header />
-
       <main className="main">
         <section className="work section" id="portfolio">
-          <h2 className="section__title">Portfolio</h2>
-          <span className="section__subtitle">Most recent works</span>
-          {projects.map((project, index) => (
-            <Project
-              key={index}
-              image={project.image}
-              title={project.title}
-              description={project.description}
-              technologies={project.technologies}
-              isLast={index === projects.length - 1}
-              id={project.id}
-            />
-          ))}
+          <h2 className="section__title">{selectedProject.title}</h2>
+          <span className="section__subtitle">
+            {selectedProject.description}
+          </span>
+          <img src={selectedProject.image} style={{ width: "100%" }} />
         </section>
       </main>
-
       <Footer />
       <ScrollUp />
     </>

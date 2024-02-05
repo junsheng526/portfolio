@@ -5,17 +5,59 @@ import ScrollUp from "../scrollup/ScrollUp";
 import "./styling.css";
 import { useParams } from "react-router-dom";
 
+const carpoolImgArray = [
+  {
+    text: "Login Page",
+    image: require("../../assets/carpool/carpool-login.png"),
+  },
+  {
+    text: "Home Page",
+    image: require("../../assets/carpool/carpool-home.png"),
+  },
+  {
+    text: "Carpool Page",
+    image: require("../../assets/carpool/carpool-trip.png"),
+  },
+  {
+    text: "Profile Page",
+    image: require("../../assets/carpool/carpool-profile.png"),
+  },
+  {
+    text: "Create Trip Page",
+    image: require("../../assets/carpool/carpool-create-trip.png"),
+  },
+  {
+    text: "Setting Page",
+    image: require("../../assets/carpool/carpool-setting.png"),
+  },
+  {
+    text: "Verify Document Page",
+    image: require("../../assets/carpool/carpool-verify-doc.png"),
+  },
+  {
+    text: "Verify Car Page",
+    image: require("../../assets/carpool/carpool-verify-car.png"),
+  },
+  {
+    text: "Wallet Page",
+    image: require("../../assets/carpool/carpool-wallet.png"),
+  },
+];
+
 const ProjectDetails = () => {
   const projectDetails = [
     {
       id: 1,
       platform: "mobile",
-      image: require("../../assets/carpool-bg.png"),
+      background: require("../../assets/carpool-bg.jpg"),
+      image: require("../../assets/carpool-1.png"),
       title: "TARUMT Carpooling Driver App",
+      subtitle: "Aimed to solve the traffic problem in TARUMT KL Campus Areas",
       description:
-        "Developed by using Kotlin for both frontend and backend, showcasing exceptional native mobile development skills. Integrated with Firebase APIs as the project database for authentication, real-time data synchronization and data storage. Integration with Google Maps API, Text Recognition API for project’s advanced features",
+        "There are some objectives we are going to develop the car pooling system: First, the first objective is to save the fuel cost for those students who always bring their own private cars alone for daily going to and returning from campus. Besides, it is also providing an opportunity for students who own a car to earn extra income around the campus. Next, to provide a reliable platform operated by TAR UMT to manage the driver information such as identity card and driving licence in order to set up a safety environment for the system operating. Furthermore, to solve the heavy traffic congestion around the campus. On the other hand, to decrease the air pollution around the campus and provide fresh quality air for the students for their daily activities on campus. Other than that, to solve the problem which is the lack of car parking in the campus. ",
       technologies:
         "Kotlin, Firebase Authenticate, Realtime Database, Storage and Push Notification",
+      imgArray: carpoolImgArray,
     },
     {
       id: 2,
@@ -49,12 +91,39 @@ const ProjectDetails = () => {
     <>
       <Header />
       <main className="main">
-        <section className="work section" id="portfolio">
-          <h2 className="section__title">{selectedProject.title}</h2>
-          <span className="section__subtitle">
-            {selectedProject.description}
-          </span>
-          <img src={selectedProject.image} style={{ width: "100%" }} />
+        <section className="section outter-container">
+          <div className="inner-container">
+            <div className="left-container">
+              <h2 className="detail-title">{selectedProject.title}</h2>
+              <span className="detail-subtitle">
+                {selectedProject.subtitle}
+              </span>
+              <button className="button detail-button">APK Download</button>
+            </div>
+            <img src={selectedProject.image} className="detail-img-bg" />
+          </div>
+        </section>
+        <section className="section about-section">
+          <div className="about-title-container">
+            <h2 className="about-title">About</h2>
+            <span className="about-description">
+              {selectedProject.description}
+            </span>
+          </div>
+        </section>
+        <section className="section features-section">
+          <div className="about-title-container">
+            <h2 className="about-title">Features</h2>
+            <div>project features...</div>
+          </div>
+          <div className="img-array-container">
+            {selectedProject.imgArray.map((item, index) => (
+              <div key={index} className="img-item">
+                <img src={item.image} alt={item.text} />
+                <h3 className="img-text">{item.text}</h3>
+              </div>
+            ))}
+          </div>
         </section>
       </main>
       <Footer />

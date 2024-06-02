@@ -44,6 +44,13 @@ const carpoolImgArray = [
   },
 ];
 
+const confessionAppImgArray = [
+  {
+    text: "Login Page",
+    image: require("../../assets/confession-app.png"),
+  },
+];
+
 const ProjectDetails = () => {
   const projectDetails = [
     {
@@ -68,6 +75,7 @@ const ProjectDetails = () => {
         "Developed by using Flutter and Dart for hybrid mobile application. Provided a cross platform mobile application which is suitable for both android and iOS users which allow students to share their thoughts, emotions and secrets anonymously.",
       technologies:
         "Flutter with Dart, Firebase Authenticate, Realtime Database and Storage",
+      imgArray: confessionAppImgArray,
     },
     {
       id: 3,
@@ -78,6 +86,8 @@ const ProjectDetails = () => {
         "Developed a solar energy website showcasing exceptional web design and development skills. Integrated with Firebase APIs as the project database for authentication, real-time data synchronization, data storage and web hosting. Performed some business functionalities such as content management, user management, appointment management for company side websites. Performed chatbot with NLP training model and sentiment analysis model in public side websites to get the data for analysis purpose for company to make business decisions.",
       technologies:
         "HTML, CSS, JavaScript and Bootstrap 5 (SCSS), Firebase Authenticate, Realtime Database, Storage, Flask, Python",
+      imgArray: [require("../../assets/solar-energy-website.png")],
+      link: "https://8-bit-six.vercel.app/",
     },
   ];
 
@@ -86,6 +96,12 @@ const ProjectDetails = () => {
   const selectedProject = projectDetails.find(
     (project) => project.id === parseInt(projectId)
   );
+
+  const onClickProject = () => {
+    if (selectedProject.platform === "web" && selectedProject.link) {
+      window.location.href = selectedProject.link;
+    }
+  };
 
   return (
     <>
@@ -98,7 +114,14 @@ const ProjectDetails = () => {
               <span className="detail-subtitle">
                 {selectedProject.subtitle}
               </span>
-              <button className="button detail-button">APK Download</button>
+              <button
+                className="button detail-button"
+                onClick={() => onClickProject()}
+              >
+                {selectedProject.platform === "mobile"
+                  ? "APK Download"
+                  : "Link to project"}
+              </button>
             </div>
             <img src={selectedProject.image} className="detail-img-bg" />
           </div>
@@ -117,12 +140,13 @@ const ProjectDetails = () => {
             <div>project features...</div>
           </div>
           <div className="img-array-container">
-            {selectedProject.imgArray.map((item, index) => (
-              <div key={index} className="img-item">
-                <img src={item.image} alt={item.text} />
-                <h3 className="img-text">{item.text}</h3>
-              </div>
-            ))}
+            {selectedProject.imgArray.length !== 0 &&
+              selectedProject.imgArray.map((item, index) => (
+                <div key={index} className="img-item">
+                  <img src={item.image} alt={item.text} />
+                  <h3 className="img-text">{item.text}</h3>
+                </div>
+              ))}
           </div>
         </section>
       </main>

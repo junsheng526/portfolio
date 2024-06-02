@@ -16,10 +16,10 @@ const constData = {
     buttonText: "Say Hello",
   },
   about: {
-    experience: "8 Years Working",
-    projects: "48 + Projects",
+    experience: "2 Years Working",
+    projects: "30 + Projects",
     description:
-      "Frontend developer, I create web pages with UI / UX user interface, I have years of experience and many clients are happy with the projects carried out.",
+      "Frontend and Mobile developer, I create web pages with UI / UX user interface, I have years of experience and many clients are happy with the projects carried out.",
   },
   backend: [
     {
@@ -50,7 +50,7 @@ const constData = {
   frontend: [
     {
       name: "HTML",
-      level: "Basic",
+      level: "Advanced",
     },
     {
       name: "CSS",
@@ -58,7 +58,7 @@ const constData = {
     },
     {
       name: "JavaScript",
-      level: "Intermediate",
+      level: "Advanced",
     },
     {
       name: "Bootstrap",
@@ -66,11 +66,33 @@ const constData = {
     },
     {
       name: "TypeScript",
-      level: "Intermediate",
+      level: "Advanced",
     },
     {
       name: "React",
+      level: "Advanced",
+    },
+  ],
+  mobile: [
+    {
+      name: "Kotlin",
+      level: "Advanced",
+    },
+    {
+      name: "Flutter",
       level: "Intermediate",
+    },
+    {
+      name: "React Native",
+      level: "Advanced",
+    },
+    {
+      name: "Objective-C",
+      level: "Basic",
+    },
+    {
+      name: "Ionic Angular",
+      level: "Basic",
     },
   ],
   education: [

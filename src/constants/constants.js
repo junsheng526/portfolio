@@ -16,10 +16,10 @@ const constData = {
     buttonText: "Say Hello",
   },
   about: {
-    experience: "2 Years Working",
+    experience: "1.5 Years Working",
     projects: "30 + Projects",
     description:
-      "Frontend and Mobile developer, I create web pages with UI / UX user interface, I have years of experience and many clients are happy with the projects carried out.",
+      "I specialize in crafting engaging and user-friendly web pages and mobile applications with a strong focus on UI/UX design. With years of experience in the industry, I have successfully completed numerous projects, earning the satisfaction and trust of my clients. I am committed to hard work and continuous self-learning to ensure I stay at the forefront of technology and deliver the best possible solutions for my clients.",
   },
   backend: [
     {

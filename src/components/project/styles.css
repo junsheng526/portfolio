@@ -1,0 +1,81 @@
+.project {
+  background-color: var(--container-color);
+  padding: 2rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.project__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: 1rem;
+}
+
+.project__description {
+  font-size: var(--small-font-size);
+  margin-bottom: 1rem;
+}
+
+.project__links {
+  margin-bottom: 20px;
+}
+
+.project__link {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+.project__link--github {
+  background-color: #333;
+  border: 1px solid #333;
+}
+
+.project__link--github:hover {
+  background-color: #555;
+}
+
+.project__link--deployed {
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #333;
+}
+
+.project__link--deployed:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.project_mobile_video {
+  width: 30%;
+  height: auto;
+  border-radius: 0.75rem;
+}
+
+.project__video {
+  width: 80%;
+  height: auto;
+  border-radius: 0.75rem;
+}
+
+.projects__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+  .projects__container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .projects__container {
+    grid-template-columns: 1fr;
+  }
+}

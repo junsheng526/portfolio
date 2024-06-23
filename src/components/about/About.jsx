@@ -15,7 +15,7 @@ const About = () => {
         <img src={AboutImg} alt="" className="about__img" />
 
         <div className="about__data">
-          <Info />
+          {/* <Info /> */}
 
           <p className="about__description">{constData.about.description}</p>
 

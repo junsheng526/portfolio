@@ -4,6 +4,7 @@ import studyPal from "../../assets/project-apk/StudyPal.apk";
 import studyPalVideo from "../../assets/project-video/StudyPal.mp4";
 import TcConfession from "../../assets/project-video/TC-Confession.mp4";
 import MoonStreet from "../../assets/project-video/MoonStreet.mp4";
+import DoctorAppointmentApp from "../../assets/project-video/Doctor-Appointment-App.mp4";
 import InventoryManagementSystem from "../../assets/project-video/InventoryManagementSystem.mp4";
 import EventManagementSystem from "../../assets/project-video/EventManagementSystem.mp4";
 import SunergyAdmin from "../../assets/project-video/SunergyAdmin.mp4";
@@ -81,6 +82,14 @@ const projectData = [
     githubLink: "https://github.com/junsheng526/SeamAssignment",
     deployedLink: "https://moonstreet-restaurant.vercel.app/",
     videoSrc: MoonStreet,
+  },
+  {
+    title: "Doctor Appointment App",
+    description:
+      "Developed to showcase the simple appointment idea between different roles which is doctor and patient.",
+    githubLink: "#",
+    deployedLink: "#.apk",
+    videoSrc: DoctorAppointmentApp,
   },
   // Add more projects as needed
 ];

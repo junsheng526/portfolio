@@ -9,8 +9,17 @@ import InventoryManagementSystem from "../../assets/project-video/InventoryManag
 import EventManagementSystem from "../../assets/project-video/EventManagementSystem.mp4";
 import SunergyAdmin from "../../assets/project-video/SunergyAdmin.mp4";
 import SunergyClient from "../../assets/project-video/SunergyClient.mp4";
+import Carpooling from "../../assets/project-video/CarpoolingDriver.mp4";
 
 const projectData = [
+  {
+    title: "Carpoooling Application",
+    description:
+      "Developed by using Kotlin for frontend, showcasing exceptional native mobile development. Integrated with Firebase APIs as the project database for authentication, real-time data synchronization and data storage, and Google Maps API, Text Recognition (OCR) API.",
+    githubLink: "https://github.com/junsheng526/CarpoolingDriverApp",
+    deployedLink: "*.apk",
+    videoSrc: Carpooling,
+  },
   {
     title: "Sunergy (Client Side) -- Renewable Energy Web Application",
     description:
